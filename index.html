@@ -89,6 +89,49 @@
     .feature h3 { font-size: 15px; font-weight: 700; color: #2C2C2A; margin-bottom: 6px; }
     .feature p { font-size: 13px; color: #888780; line-height: 1.5; }
 
+    /* ── GIVEAWAY ── */
+    .giveaway {
+      background: #2C2C2A; padding: 56px 24px;
+    }
+    .giveaway-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+    .giveaway-badge {
+      display: inline-block; background: #FAC775; color: #2C2C2A;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.8px;
+      text-transform: uppercase; padding: 6px 16px; border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .giveaway h2 {
+      font-size: 26px; font-weight: 800; color: white;
+      line-height: 1.2; margin-bottom: 12px;
+    }
+    .giveaway h2 span { color: #FAC775; }
+    .giveaway .sub {
+      font-size: 15px; color: rgba(255,255,255,0.6);
+      max-width: 480px; margin: 0 auto 36px; line-height: 1.6;
+    }
+    .giveaway-cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px; text-align: left;
+    }
+    .giveaway-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px; padding: 22px 24px;
+    }
+    .giveaway-card .gc-num {
+      font-size: 11px; font-weight: 800; color: #FAC775;
+      letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;
+    }
+    .giveaway-card .gc-title {
+      font-size: 16px; font-weight: 700; color: white; margin-bottom: 6px;
+    }
+    .giveaway-card .gc-desc {
+      font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5;
+    }
+    .giveaway-cta {
+      margin-top: 28px; font-size: 13px; color: rgba(255,255,255,0.4);
+    }
+    .giveaway-cta a { color: #FAC775; text-decoration: none; font-weight: 600; }
+
     /* ── FOOTER ── */
     footer {
       text-align: center; padding: 24px;
@@ -97,6 +140,12 @@
     }
     footer a { color: #B0ADA8; text-decoration: none; }
     footer a:hover { color: #D85A30; }
+    .insta-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: #B0ADA8; text-decoration: none; font-size: 12px;
+      transition: color 0.15s;
+    }
+    .insta-link:hover { color: #D85A30; }
   </style>
 </head>
 <body>
@@ -153,7 +202,37 @@
   </div>
 </section>
 
+<section class="giveaway">
+  <div class="giveaway-inner">
+    <div class="giveaway-badge">🎁 Jeu de lancement</div>
+    <h2>On fait gagner<br><span>1 an de Premium</span> — deux fois.</h2>
+    <p class="sub">Pour fêter le lancement de Cravia, on offre un abonnement Premium d'un an à deux personnes tirées au sort.</p>
+
+    <div class="giveaway-cards">
+      <div class="giveaway-card">
+        <div class="gc-num">Tirage #1</div>
+        <div class="gc-title">📱 Parmi les abonnés Instagram</div>
+        <div class="gc-desc">Abonne-toi à <a href="https://instagram.com/cravia.app" target="_blank" style="color:#FAC775;font-weight:600">@cravia.app</a> avant le lancement et tente ta chance automatiquement.</div>
+      </div>
+      <div class="giveaway-card">
+        <div class="gc-num">Tirage #2</div>
+        <div class="gc-title">📧 Parmi la liste d'attente</div>
+        <div class="gc-desc">Inscris-toi au formulaire ci-dessus et tu participes directement au tirage au sort du lancement.</div>
+      </div>
+    </div>
+
+    <div class="giveaway-cta">
+      Tirage effectué le jour du lancement · <a href="https://instagram.com/cravia.app" target="_blank">@cravia.app</a>
+    </div>
+  </div>
+</section>
+
 <footer>
+  <a href="https://instagram.com/cravia.app" target="_blank" class="insta-link">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    @cravia.app
+  </a>
+  &nbsp;·&nbsp;
   © 2026 Cravia &nbsp;·&nbsp; <a href="/privacy">Confidentialité</a>
 </footer>
 
