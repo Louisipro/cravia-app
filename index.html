@@ -25,7 +25,6 @@
       background: #D85A30;
       padding: 60px 24px 80px;
       text-align: center;
-      flex: 1;
     }
     .badge {
       display: inline-block; background: rgba(255,255,255,0.18);
@@ -41,25 +40,13 @@
     .hero h1 span { color: #FAC775; }
     .hero p {
       font-size: 17px; color: rgba(255,255,255,0.85);
-      max-width: 480px; margin: 0 auto 40px; line-height: 1.6;
-    }
-
-    /* ── FORM ── */
-    .form-wrap { max-width: 480px; margin: 0 auto; }
-    .form-note {
-      color: rgba(255,255,255,0.65); font-size: 12px;
-      margin-top: 12px; text-align: center;
-    }
-    .tally-wrap {
-      background: white; border-radius: 16px;
-      overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-      min-height: 80px;
+      max-width: 480px; margin: 0 auto 32px; line-height: 1.6;
     }
 
     /* ── STORES ── */
     .stores {
       display: flex; gap: 12px; justify-content: center;
-      margin-top: 36px; flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .store-pill {
       display: flex; align-items: center; gap: 8px;
@@ -70,24 +57,49 @@
 
     /* ── FEATURES ── */
     .features {
-      background: #FDF6EE; padding: 64px 24px;
+      background: #FDF6EE; padding: 72px 24px;
     }
-    .features-inner { max-width: 760px; margin: 0 auto; }
+    .features-inner { max-width: 820px; margin: 0 auto; }
     .features h2 {
-      text-align: center; font-size: 24px; font-weight: 700;
-      color: #2C2C2A; margin-bottom: 40px;
+      text-align: center; font-size: 26px; font-weight: 700;
+      color: #2C2C2A; margin-bottom: 48px;
     }
     .features-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
     .feature {
-      background: white; border-radius: 16px; padding: 24px;
+      background: white; border-radius: 16px; padding: 28px 24px;
       border: 1px solid #E8D5C0; text-align: center;
     }
-    .feature-emoji { font-size: 36px; margin-bottom: 12px; }
-    .feature h3 { font-size: 15px; font-weight: 700; color: #2C2C2A; margin-bottom: 6px; }
+    .feature-emoji { font-size: 36px; margin-bottom: 14px; }
+    .feature h3 { font-size: 15px; font-weight: 700; color: #2C2C2A; margin-bottom: 8px; }
     .feature p { font-size: 13px; color: #888780; line-height: 1.5; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: #D85A30; padding: 72px 24px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: 26px; font-weight: 800; color: white;
+      margin-bottom: 12px; line-height: 1.2;
+    }
+    .cta-section h2 span { color: #FAC775; }
+    .cta-section .sub {
+      font-size: 16px; color: rgba(255,255,255,0.75);
+      max-width: 440px; margin: 0 auto 32px; line-height: 1.6;
+    }
+    .form-wrap { max-width: 480px; margin: 0 auto; }
+    .form-note {
+      color: rgba(255,255,255,0.65); font-size: 12px;
+      margin-top: 12px; text-align: center;
+    }
+    .tally-wrap {
+      background: white; border-radius: 16px;
+      overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      min-height: 80px;
+    }
 
     /* ── GIVEAWAY ── */
     .giveaway {
@@ -134,9 +146,10 @@
 
     /* ── FOOTER ── */
     footer {
-      text-align: center; padding: 24px;
+      text-align: center; padding: 24px 24px 28px;
       font-size: 12px; color: #B0ADA8;
       border-top: 1px solid #E8D5C0;
+      line-height: 2;
     }
     footer a { color: #B0ADA8; text-decoration: none; }
     footer a:hover { color: #D85A30; }
@@ -157,17 +170,7 @@
 <section class="hero">
   <div class="badge">🚀 Bientôt disponible</div>
   <h1>Dis ce dont tu as envie.<br><span>L'IA cuisine pour toi.</span></h1>
-  <p>Cravia génère tes recettes chaque matin selon tes objectifs — et tu peux tout modifier, remplacer, créer en un mot. Ton coach nutrition IA, enfin.</p>
-
-  <div class="form-wrap">
-    <div class="tally-wrap">
-      <iframe data-tally-src="https://tally.so/embed/eqYpVl?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        loading="lazy" width="100%" height="80" frameborder="0"
-        marginheight="0" marginwidth="0" title="Liste d'attente Cravia"></iframe>
-    </div>
-    <p class="form-note">Pas de spam. Juste un email le jour du lancement. 🍊</p>
-  </div>
-
+  <p>Cravia génère tes recettes chaque matin selon tes objectifs — calories, protéines, goûts. Ton coach nutrition IA, enfin.</p>
   <div class="stores">
     <div class="store-pill">📱 iOS</div>
     <div class="store-pill">🤖 Android</div>
@@ -176,29 +179,47 @@
 
 <section class="features">
   <div class="features-inner">
-    <h2>Des recettes IA, <em style="font-style:normal;color:#D85A30;">vraiment</em> sur mesure</h2>
+    <h2>Tout ce que Cravia fait <em style="font-style:normal;color:#D85A30;">pour toi</em></h2>
     <div class="features-grid">
       <div class="feature">
         <div class="feature-emoji">🤖</div>
-        <h3>Recettes générées par l'IA</h3>
-        <p>Chaque matin, 4 recettes créées spécialement pour toi — selon tes macros, ton objectif et tes allergies.</p>
+        <h3>Plan repas IA chaque matin</h3>
+        <p>4 recettes générées chaque jour selon tes macros, ton objectif et tes allergies — sans effort.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-emoji">🥕</div>
+        <h3>"J'ai…" — frigo → recette</h3>
+        <p>Liste ce que tu as sous la main. L'IA crée une recette avec tes ingrédients, adaptée à tes objectifs.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-emoji">✨</div>
+        <h3>"Envie de…" — à la demande</h3>
+        <p>Dis ce dont tu as envie. Cravia génère la recette parfaite qui correspond à tes goûts ET tes macros.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-emoji">📊</div>
+        <h3>Tracker macros intégré</h3>
+        <p>Calories, protéines, glucides, lipides — suivis en temps réel avec un anneau visuel clair.</p>
       </div>
       <div class="feature">
         <div class="feature-emoji">✏️</div>
         <h3>Modifie tout en un mot</h3>
-        <p>"Remplace le riz par des pâtes", "sans gluten" — l'IA adapte la recette à la seconde.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-emoji">💬</div>
-        <h3>"J'ai envie de…"</h3>
-        <p>Dis ce dont tu as envie. L'IA crée une recette sur mesure qui correspond à tes goûts ET tes objectifs.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-emoji">📊</div>
-        <h3>Macros toujours justes</h3>
-        <p>Calories, protéines, glucides, lipides — calculés automatiquement pour chaque recette générée.</p>
+        <p>"Remplace le riz par des pâtes", "sans gluten" — l'IA adapte la recette instantanément.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Sois parmi les <span>premiers à l'essayer</span></h2>
+  <p class="sub">Inscris-toi à la liste d'attente — on t'envoie un email le jour du lancement, rien de plus.</p>
+  <div class="form-wrap">
+    <div class="tally-wrap">
+      <iframe data-tally-src="https://tally.so/embed/eqYpVl?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy" width="100%" height="80" frameborder="0"
+        marginheight="0" marginwidth="0" title="Liste d'attente Cravia"></iframe>
+    </div>
+    <p class="form-note">Pas de spam. Juste un email le jour du lancement. 🍊</p>
   </div>
 </section>
 
@@ -233,7 +254,11 @@
     @cravia.app
   </a>
   &nbsp;·&nbsp;
-  © 2026 Cravia &nbsp;·&nbsp; <a href="/privacy">Confidentialité</a>
+  © 2026 Cravia
+  <br style="margin-bottom: 8px;" />
+  <a href="/contact">Contact</a> &nbsp;·&nbsp;
+  <a href="/privacy">Confidentialité</a> &nbsp;·&nbsp;
+  <a href="/terms">Conditions d'utilisation</a>
 </footer>
 
 <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
